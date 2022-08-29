@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+
+body {
+	background-color: rgb(243, 224, 248);
+}
+
+/*header css*/
+
+header {
+	width: 100%;
+	overflow: hidden;
+	background: #d7bbe6;
+}
+
+header .logo {
+	color: #000000;
+	font-size: 50px;
+	line-height: 200px;
+	float: left;
+}
+
+header nav {
+	float: right;
+	line-height: 200px;
+}
+
+header nav a {
+	display: inline-block;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 20px;
+	font-weight: bold;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+header nav a:hover {
+	background: #e284f0;
+	border-radius: 50px;
+}
+
+/*main css*/
+
+main {
+	height: 600px;
+}
+
+.imagenesc {
+	display: flex;
+	justify-content: center;
+	line-height: 300px;
+	height: 300px;
+	font-size: 300px
+}
+
+/*footer css*/
+
+footer {
+	background-color: #d7bbe6;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
+
+.flexLista {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	height: 90px;
+}
+
+
+.redes {
+	line-height: 34px;
+	height: 34px;
+	width: 34px;
+	font-size: 14px
+}
+
+/*main de contacto*/
+
+.inscribirse {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.titulo {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.formulario {
+	background-color: rgb(239, 186, 226);
+	width: 400px;
+	border-radius: 8px;
+	padding: 20px 40px;
+	box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.inputcontenedor {
+	position: relative;
+	height: 45px;
+	width: 90%;
+	margin-bottom: 17px;
+}
+
+.input {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	border: 1px solid #ffffff;
+	border-radius: 7px;
+	font-size: 16px;
+	padding: 0 20px;
+	outline: none;
+	background: none;
+	z-index: 1;
+}
+
+::placeholder {
+	color: transparent;
+}
+
+.label {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	padding: 0 4px;
+	background-color: rgb(239, 186, 226);
+	color: #fae4f8;
+	font-size: 16px;
+	transition: 0.5s;
+	z-index: 0;
+}
+
+.submitBtn {
+	display: block;
+	border: none;
+	background-color: purple;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.submitBtn:hover {
+	background-color: #9867C5;
+	transform: translateY(-2px);
+}
+
+.input:focus+.label {
+	top: -7px;
+	left: 3px;
+	z-index: 10;
+	font-size: 14px;
+	font-weight: 600;
+	color: purple;
+}
+
+.input:focus {
+	border: 2px solid purple;
+}
+
+.input:not(:placeholder-shown)+.label {
+	top: -7px;
+	left: 3px;
+	z-index: 10;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/*main productos*/
+.container {
+	position: relative;
+	width: 300px;
+}
+
+.image {
+	display: block;
+	width: 300px;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #b360e77a;
+	overflow: hidden;
+	width: 500px;
+	height: 0;
+	transition: .5s ease;
+}
+
+.container:hover .overlay {
+	bottom: 0;
+	height: 300px;
+	width: 300px;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.organizar{
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+
+.contenidoPrincipal {
+	display: flex;
+	flex-direction: row;
+	background-color: #e6ccff;
+	font-family: scada;
+	margin: 25px;
+	padding: 15px;
+	justify-content: space-evenly;
+	align-content: space-around;
+	height: 795px;
+  }
+  
+  
+  .section {
+	background-color: #c197d2;
+	width: 25%;
+	height: 100%;
+  }
